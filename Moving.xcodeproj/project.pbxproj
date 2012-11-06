@@ -13,6 +13,16 @@
 		0F99589C164908A900944124 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0F99589A164908A900944124 /* InfoPlist.strings */; };
 		0F99589E164908A900944124 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F99589D164908A900944124 /* main.m */; };
 		0F9958A2164908A900944124 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F9958A1164908A900944124 /* AppDelegate.m */; };
+		0F9958B01649092D00944124 /* InformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F9958AE1649092D00944124 /* InformationViewController.m */; };
+		0F9958B11649092D00944124 /* InformationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F9958AF1649092D00944124 /* InformationViewController.xib */; };
+		0F9958B51649096800944124 /* ExperienceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F9958B31649096800944124 /* ExperienceViewController.m */; };
+		0F9958B61649096800944124 /* ExperienceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F9958B41649096800944124 /* ExperienceViewController.xib */; };
+		0F9958BA1649097600944124 /* WatchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F9958B81649097600944124 /* WatchViewController.m */; };
+		0F9958BB1649097600944124 /* WatchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F9958B91649097600944124 /* WatchViewController.xib */; };
+		0F9958BF1649098300944124 /* EditerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F9958BD1649098300944124 /* EditerViewController.m */; };
+		0F9958C01649098300944124 /* EditerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F9958BE1649098300944124 /* EditerViewController.xib */; };
+		0F9958C41649099700944124 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F9958C21649099700944124 /* MainViewController.m */; };
+		0F9958C51649099700944124 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F9958C31649099700944124 /* MainViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +30,27 @@
 		0F995891164908A900944124 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0F995893164908A900944124 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0F995895164908A900944124 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		0F995899164908A900944124 /* Moving-Info.plist */ = {isa = PBXFileReference; path = "Moving-Info.plist"; sourceTree = "<group>"; };
+		0F995899164908A900944124 /* Moving-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Moving-Info.plist"; sourceTree = "<group>"; };
 		0F99589B164908A900944124 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0F99589D164908A900944124 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		0F99589F164908A900944124 /* Moving-Prefix.pch */ = {isa = PBXFileReference; path = "Moving-Prefix.pch"; sourceTree = "<group>"; };
-		0F9958A0164908A900944124 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		0F99589F164908A900944124 /* Moving-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Moving-Prefix.pch"; sourceTree = "<group>"; };
+		0F9958A0164908A900944124 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0F9958A1164908A900944124 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0F9958AD1649092D00944124 /* InformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InformationViewController.h; sourceTree = "<group>"; };
+		0F9958AE1649092D00944124 /* InformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InformationViewController.m; sourceTree = "<group>"; };
+		0F9958AF1649092D00944124 /* InformationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InformationViewController.xib; sourceTree = "<group>"; };
+		0F9958B21649096800944124 /* ExperienceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExperienceViewController.h; sourceTree = "<group>"; };
+		0F9958B31649096800944124 /* ExperienceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExperienceViewController.m; sourceTree = "<group>"; };
+		0F9958B41649096800944124 /* ExperienceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExperienceViewController.xib; sourceTree = "<group>"; };
+		0F9958B71649097600944124 /* WatchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WatchViewController.h; sourceTree = "<group>"; };
+		0F9958B81649097600944124 /* WatchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WatchViewController.m; sourceTree = "<group>"; };
+		0F9958B91649097600944124 /* WatchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WatchViewController.xib; sourceTree = "<group>"; };
+		0F9958BC1649098300944124 /* EditerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditerViewController.h; sourceTree = "<group>"; };
+		0F9958BD1649098300944124 /* EditerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditerViewController.m; sourceTree = "<group>"; };
+		0F9958BE1649098300944124 /* EditerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditerViewController.xib; sourceTree = "<group>"; };
+		0F9958C11649099700944124 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		0F9958C21649099700944124 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		0F9958C31649099700944124 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +70,11 @@
 		0F995882164908A800944124 = {
 			isa = PBXGroup;
 			children = (
+				0F9958AC1649090600944124 /* Information */,
+				0F9958AB164908E300944124 /* Experience */,
+				0F9958AA164908DB00944124 /* Watch */,
+				0F9958A9164908C700944124 /* Editer */,
+				0F9958A8164908B900944124 /* Main */,
 				0F995897164908A900944124 /* Moving */,
 				0F995890164908A900944124 /* Frameworks */,
 				0F99588E164908A900944124 /* Products */,
@@ -88,6 +118,56 @@
 				0F99589F164908A900944124 /* Moving-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0F9958A8164908B900944124 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				0F9958C11649099700944124 /* MainViewController.h */,
+				0F9958C21649099700944124 /* MainViewController.m */,
+				0F9958C31649099700944124 /* MainViewController.xib */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		0F9958A9164908C700944124 /* Editer */ = {
+			isa = PBXGroup;
+			children = (
+				0F9958BC1649098300944124 /* EditerViewController.h */,
+				0F9958BD1649098300944124 /* EditerViewController.m */,
+				0F9958BE1649098300944124 /* EditerViewController.xib */,
+			);
+			name = Editer;
+			sourceTree = "<group>";
+		};
+		0F9958AA164908DB00944124 /* Watch */ = {
+			isa = PBXGroup;
+			children = (
+				0F9958B71649097600944124 /* WatchViewController.h */,
+				0F9958B81649097600944124 /* WatchViewController.m */,
+				0F9958B91649097600944124 /* WatchViewController.xib */,
+			);
+			name = Watch;
+			sourceTree = "<group>";
+		};
+		0F9958AB164908E300944124 /* Experience */ = {
+			isa = PBXGroup;
+			children = (
+				0F9958B21649096800944124 /* ExperienceViewController.h */,
+				0F9958B31649096800944124 /* ExperienceViewController.m */,
+				0F9958B41649096800944124 /* ExperienceViewController.xib */,
+			);
+			name = Experience;
+			sourceTree = "<group>";
+		};
+		0F9958AC1649090600944124 /* Information */ = {
+			isa = PBXGroup;
+			children = (
+				0F9958AD1649092D00944124 /* InformationViewController.h */,
+				0F9958AE1649092D00944124 /* InformationViewController.m */,
+				0F9958AF1649092D00944124 /* InformationViewController.xib */,
+			);
+			name = Information;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +221,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F99589C164908A900944124 /* InfoPlist.strings in Resources */,
+				0F9958B11649092D00944124 /* InformationViewController.xib in Resources */,
+				0F9958B61649096800944124 /* ExperienceViewController.xib in Resources */,
+				0F9958BB1649097600944124 /* WatchViewController.xib in Resources */,
+				0F9958C01649098300944124 /* EditerViewController.xib in Resources */,
+				0F9958C51649099700944124 /* MainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +238,11 @@
 			files = (
 				0F99589E164908A900944124 /* main.m in Sources */,
 				0F9958A2164908A900944124 /* AppDelegate.m in Sources */,
+				0F9958B01649092D00944124 /* InformationViewController.m in Sources */,
+				0F9958B51649096800944124 /* ExperienceViewController.m in Sources */,
+				0F9958BA1649097600944124 /* WatchViewController.m in Sources */,
+				0F9958BF1649098300944124 /* EditerViewController.m in Sources */,
+				0F9958C41649099700944124 /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
