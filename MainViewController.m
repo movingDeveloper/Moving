@@ -10,7 +10,6 @@
 @implementation MainViewController
 
 @synthesize items;
-@synthesize imageView;
 @synthesize carousel;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -35,47 +34,27 @@
     [self.view addSubview:imageView1];
     [imageView1 release];
     
-    [self.view addSubview:self.imageView];
     
     carousel = [[iCarousel alloc]init];
-    carousel.frame = CGRectMake(0, 0, 320, 460);
+    carousel.frame = CGRectMake(0, 0, 320, 400);
     [self.view addSubview:carousel];
     carousel.delegate =self;
     carousel.dataSource = self;
-
+    
     carousel.type = iCarouselTypeWheel;
     
     NSString *httpURl = @"http://zixun.www.net.cn/api/hichinaapp.php?module=ad&ver=1.0&client=ios&timestamp=20121106102334&appid=IOS259";
     
     NSString *string = [httpURl stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-
+    
     NSURL*url=[NSURL URLWithString:string];
     
-    NSString *str= [NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding error:nil];
-
-    NSJSONSerialization
-    NSArray *ary = [str componentsSeparatedByString:@"\\"];
-    NSMutableString *str1 = [[NSMutableString alloc]init];
-    for (NSString *s in ary) {
-        [str1 appendFormat:s];
-    }
-    NSLog(@"%@",str1);
-//    NSData *data = [array dataUsingEncoding:NSUTF8StringEncoding];
-//    
-//    NSLog(@"+++++++++++++++%@",data);
-//    
-//    id json = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:nil];
-//    NSLog(@"--------%d",[json count]);
-    
-//    
-//    NSMutableURLRequest * request = [NSMutableURLRequest requestWithURL:url cachePolicy:NSURLRequestReloadIgnoringCacheData timeoutInterval:10.0f];
-//    
-//    [NSURLConnection connectionWithRequest:request delegate:self];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+    [request setHTTPMethod:@"POST"];
+    [NSURLConnection connectionWithRequest:request delegate:self];
     
 }
 
-
-#pragma mark -
 #pragma mark iCarousel methods
 
 - (NSUInteger)numberOfItemsInCarousel:(iCarousel *)carousel
@@ -159,7 +138,6 @@
 
 - (void)viewDidUnload
 {
-    [self setImageView:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -177,23 +155,16 @@
 }
 -(void)connectionDidFinishLoading:(NSURLConnection *)connection
 {
+    
     NSString *str = [[NSString alloc]initWithData:tempData encoding:NSUTF8StringEncoding];
-    NSLog(@"%@",str);
-
-
-   // NSArray *ary = [[NSArray alloc]ini];
-//    
-    NSArray *ary = [str componentsSeparatedByString:@"\\"];
-    NSMutableString *str1 = [[NSMutableString alloc]init];
-    for (NSString *s in ary) {
-    [str1 appendFormat:s];
-}
-
-NSLog(@"%@",str1);
     
+    NSString *JSONStr = [str substringFromIndex:2];
+    NSArray *JSON = [JSONStr JSONValue];
+    NSURL *url1 = [[JSON objectAtIndex:0] objectForKey:@"pic"];
+    [[JSON objectAtIndex:1]objectForKey:@"pic"];
     
-    [tempData release];
-   // [str release];
+    NSLog(@"%@",JSON);
+    
 }
 
 
@@ -202,8 +173,8 @@ NSLog(@"%@",str1);
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
-- (void)dealloc {
-    [imageView release];
+- (void)dealloc
+{
     [super dealloc];
 }
 @end

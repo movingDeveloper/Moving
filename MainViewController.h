@@ -7,7 +7,6 @@
 {
     NSMutableData *tempData;
 }
-@property (retain, nonatomic) IBOutlet UIImageView *imageView;
 
 @property (nonatomic, retain)  iCarousel *carousel;
 @property (nonatomic, strong) NSMutableArray *items;
