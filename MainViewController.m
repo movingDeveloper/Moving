@@ -1,11 +1,9 @@
 
-
 #import "MainViewController.h"
 #import <QuartzCore/QuartzCore.h>
 #import "SBJson.h"
 #define NUMBER_OF_ITEMS 15
 #define ITEM_SPACING 90.0f
-
 
 @implementation MainViewController
 
