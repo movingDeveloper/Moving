@@ -1,13 +1,15 @@
-//
-//  MainViewController.h
-//  Moving
-//
-//  Created by Ibokan on 12-11-6.
-//  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
-//
+
 
 #import <UIKit/UIKit.h>
+#import "iCarousel.h"
 
-@interface MainViewController : UIViewController
+@interface MainViewController : UIViewController<iCarouselDataSource, iCarouselDelegate,NSURLConnectionDelegate>
+{
+    NSMutableData *tempData;
+}
+@property (retain, nonatomic) IBOutlet UIImageView *imageView;
 
+@property (nonatomic, retain)  iCarousel *carousel;
+@property (nonatomic, strong) NSMutableArray *items;
+- (void)setUp;
 @end
