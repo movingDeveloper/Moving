@@ -11,14 +11,13 @@
 @synthesize items ;
 @synthesize carousel ;
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+-(id)init
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self)
-    {
+    self = [super init];
+    if (self) {
         
     }
-    return self;
+    return  self;
 }
 
 - (void)viewDidLoad

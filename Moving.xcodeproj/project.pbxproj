@@ -52,7 +52,6 @@
 		0F9958BF1649098300944124 /* EditerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F9958BD1649098300944124 /* EditerViewController.m */; };
 		0F9958C01649098300944124 /* EditerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F9958BE1649098300944124 /* EditerViewController.xib */; };
 		0F9958C41649099700944124 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F9958C21649099700944124 /* MainViewController.m */; };
-		0F9958C51649099700944124 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F9958C31649099700944124 /* MainViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -124,7 +123,6 @@
 		0F9958BE1649098300944124 /* EditerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditerViewController.xib; sourceTree = "<group>"; };
 		0F9958C11649099700944124 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		0F9958C21649099700944124 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		0F9958C31649099700944124 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -268,7 +266,6 @@
 				0F98DC9A16490EB80045A8E9 /* iCarousel.m */,
 				0F9958C11649099700944124 /* MainViewController.h */,
 				0F9958C21649099700944124 /* MainViewController.m */,
-				0F9958C31649099700944124 /* MainViewController.xib */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -368,7 +365,6 @@
 				0F9958B61649096800944124 /* ExperienceViewController.xib in Resources */,
 				0F9958BB1649097600944124 /* WatchViewController.xib in Resources */,
 				0F9958C01649098300944124 /* EditerViewController.xib in Resources */,
-				0F9958C51649099700944124 /* MainViewController.xib in Resources */,
 				0F98DC8016490E700045A8E9 /* Default.png in Resources */,
 				0F98DC8116490E700045A8E9 /* Default@2x.png in Resources */,
 				0F98DC8216490E700045A8E9 /* Icon-72.png in Resources */,
